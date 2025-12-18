@@ -179,7 +179,7 @@ Create a script to periodically sync from GitHub to your local machine:
 # sync-from-github.sh
 
 cd ~/git-repositories/meta.git
-git fetch https://github.com/michaelanticoli/meta.git main:main
+git fetch https://github.com/YOUR-USERNAME/YOUR-REPO.git main:main
 ```
 
 Add to crontab to run every hour:

@@ -66,4 +66,4 @@ git remote remove local
 
 ## Full Documentation
 
-For complete instructions, troubleshooting, and advanced configurations, see [PUSH_TO_LOCAL.md](../../PUSH_TO_LOCAL.md)
+For complete instructions, troubleshooting, and advanced configurations, see [PUSH_TO_LOCAL.md](../PUSH_TO_LOCAL.md)

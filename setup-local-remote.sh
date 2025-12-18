@@ -111,12 +111,12 @@ case $SETUP_TYPE in
         read -p "Host/IP: " SSH_HOST
         read -p "Repository path on remote: " SSH_PATH
         
-        REMOTE_URL="ssh://${SSH_USER}@${SSH_HOST}${SSH_PATH}"
+        REMOTE_URL="ssh://${SSH_USER}@${SSH_HOST}/${SSH_PATH}"
         
         print_warning "Make sure the bare repository exists on the remote machine!"
         echo "You can create it by running on the remote machine:"
-        echo "  mkdir -p $(dirname $SSH_PATH)"
-        echo "  git init --bare $SSH_PATH"
+        echo "  mkdir -p \"$(dirname "$SSH_PATH")\""
+        echo "  git init --bare \"$SSH_PATH\""
         ;;
     3)
         print_header "Windows Path Setup"
@@ -128,8 +128,8 @@ case $SETUP_TYPE in
         
         print_warning "Make sure the bare repository exists at this location!"
         echo "You can create it by running in Git Bash:"
-        echo "  mkdir -p $(dirname $WIN_PATH)"
-        echo "  git init --bare $WIN_PATH"
+        echo "  mkdir -p \"$(dirname "$WIN_PATH")\""
+        echo "  git init --bare \"$WIN_PATH\""
         ;;
     4)
         print_header "Custom URL Setup"
