@@ -44,6 +44,20 @@ Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](http
 
 Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
 
+## Pushing to Local Machine
+
+You can set up your local machine as a git remote to push changes directly from GitHub. This is useful for:
+- Maintaining a local backup of your repository
+- Syncing changes between GitHub and your local machine
+- Working with both remote and local copies
+
+**Quick setup:**
+```bash
+./setup-local-remote.sh
+```
+
+For detailed instructions, see [PUSH_TO_LOCAL.md](PUSH_TO_LOCAL.md)
+
 ## Features
 
 ### Once UI

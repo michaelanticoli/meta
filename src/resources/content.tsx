@@ -82,8 +82,12 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Michael, a creative technologist working at the <Text as="span" size="xl" weight="strong">intersection of music, astrology, and AI</Text>.<br />
-      I build innovative frameworks that merge sound, symbolism, and computational logic into practical tools and immersive experiences.
+      I'm Michael, a creative technologist working at the{" "}
+      <Text as="span" size="xl" weight="strong">
+        intersection of music, astrology, and AI
+      </Text>
+      .<br />I build innovative frameworks that merge sound, symbolism, and computational logic into
+      practical tools and immersive experiences.
     </>
   ),
 };
@@ -109,13 +113,13 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Michael Anticoli is a creative technologist and interdisciplinary strategist working at the 
-        intersection of music, astrology, and intelligent systems design. He builds innovative 
-        frameworks that merge sound, symbolism, and computational logic—most notably the 
-        Quantumelodic MetaSystem—to translate complex metaphysical structures into practical tools 
-        and immersive digital experiences. His work blends creative direction, technical architecture, 
-        and conceptual storytelling to help brands and individuals communicate with clarity, 
-        resonance, and emotional precision.
+        Michael Anticoli is a creative technologist and interdisciplinary strategist working at the
+        intersection of music, astrology, and intelligent systems design. He builds innovative
+        frameworks that merge sound, symbolism, and computational logic—most notably the
+        Quantumelodic MetaSystem—to translate complex metaphysical structures into practical tools
+        and immersive digital experiences. His work blends creative direction, technical
+        architecture, and conceptual storytelling to help brands and individuals communicate with
+        clarity, resonance, and emotional precision.
       </>
     ),
   },
@@ -129,16 +133,17 @@ const about: About = {
         role: "Creative Technologist & AI Content Strategist",
         achievements: [
           <>
-            Developed the Quantumelodic MetaSystem, a comprehensive framework merging music theory, 
-            astrological symbolism, and AI-driven content generation to create personalized sonic 
+            Developed the Quantumelodic MetaSystem, a comprehensive framework merging music theory,
+            astrological symbolism, and AI-driven content generation to create personalized sonic
             and narrative experiences.
           </>,
           <>
-            Architected AI-assisted workflows for brands and creators, integrating generative AI tools 
-            (OpenAI, Claude, Suno, Runway) to accelerate creative production and strategic messaging.
+            Architected AI-assisted workflows for brands and creators, integrating generative AI
+            tools (OpenAI, Claude, Suno, Runway) to accelerate creative production and strategic
+            messaging.
           </>,
           <>
-            Designed and deployed web-based applications using Flask, Node.js, and Supabase for 
+            Designed and deployed web-based applications using Flask, Node.js, and Supabase for
             interactive experiences and data-driven content platforms.
           </>,
         ],
@@ -170,8 +175,8 @@ const about: About = {
         title: "AI-Assisted Content Architecture",
         description: (
           <>
-            Designing and implementing generative AI workflows using OpenAI, Claude, Suno, and Runway 
-            for content creation, brand strategy, and creative production.
+            Designing and implementing generative AI workflows using OpenAI, Claude, Suno, and
+            Runway for content creation, brand strategy, and creative production.
           </>
         ),
         tags: [
@@ -214,8 +219,8 @@ const about: About = {
         title: "Web Architecture & Development",
         description: (
           <>
-            Building web applications with Flask, Node.js, Next.js, and Supabase. 
-            Orchestrating full-stack experiences with Python backends and modern JavaScript frameworks.
+            Building web applications with Flask, Node.js, Next.js, and Supabase. Orchestrating
+            full-stack experiences with Python backends and modern JavaScript frameworks.
           </>
         ),
         tags: [
@@ -242,8 +247,8 @@ const about: About = {
         title: "Brand Strategy & Narrative Design",
         description: (
           <>
-            Creative direction, messaging architecture, UX writing, and systems thinking for 
-            brand storytelling and audience engagement.
+            Creative direction, messaging architecture, UX writing, and systems thinking for brand
+            storytelling and audience engagement.
           </>
         ),
         tags: [
