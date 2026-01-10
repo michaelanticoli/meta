@@ -38,7 +38,7 @@ src/resources/content.js
 Add a new .mdx file to src/app/blog/posts or src/app/work/projects
 ```
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v20.0+.
 
 ## Documentation
 
