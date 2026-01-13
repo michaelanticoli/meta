@@ -8,6 +8,7 @@ export {
   blog,
   work,
   gallery,
+  songOfTheMoon,
 } from "./content";
 
 export {
