@@ -22,6 +22,7 @@ const routes: RoutesConfig = {
   "/work": true,
   "/blog": true,
   "/gallery": true,
+  "/song-of-the-moon": true,
 };
 
 const display: DisplayConfig = {

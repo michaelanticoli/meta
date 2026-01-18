@@ -5,7 +5,7 @@ const person: Person = {
   firstName: "Michael",
   lastName: "Anticoli",
   name: `Michael Anticoli`,
-  role: "Creative Technologist, AI Content Strategist & Sonic Systems Architect",
+  role: "Sonic Innovator, Brand Strategist, Storyteller & Systems Thinker",
   avatar: "/images/avatar.jpg",
   email: "michaelanticoli@gmail.com",
   location: "America/Los_Angeles", // IANA time zone for Los Angeles
@@ -47,9 +47,9 @@ const social: Social = [
     essential: true,
   },
   {
-    name: "Quantumelodies",
+    name: "Quantumelodics",
     icon: "globe",
-    link: "https://quantumelodies.com",
+    link: "https://quantumelodics.vercel.app",
     essential: false,
   },
   {
@@ -64,9 +64,9 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name} – Creative Technologist & Sonic Systems Architect`,
-  description: `Portfolio showcasing interdisciplinary work at the intersection of music, astrology, and intelligent systems design`,
-  headline: <>Building bridges between sound, symbolism, and code</>,
+  title: `${person.name} – Sonic Innovator & Brand Strategist`,
+  description: `Portfolio showcasing transformative work in sonic innovation, brand strategy, and systems thinking at the intersection of music, data, and storytelling`,
+  headline: <>Transforming data into resonant stories through sound and strategy</>,
   featured: {
     display: true,
     title: (
@@ -82,12 +82,14 @@ const home: Home = {
   },
   subline: (
     <>
-      I'm Michael, a creative technologist working at the{" "}
+      I'm Michael, a{" "}
       <Text as="span" size="xl" weight="strong">
-        intersection of music, astrology, and AI
-      </Text>
-      .<br />I build innovative frameworks that merge sound, symbolism, and computational logic into
-      practical tools and immersive experiences.
+        sonic innovator and brand strategist
+      </Text>{" "}
+      who transforms complex data into resonant stories.<br />
+      As a storyteller and systems thinker, I create frameworks that merge sound, strategy, and 
+      technology into transformative experiences that connect with audiences on emotional and 
+      intellectual levels.
     </>
   ),
 };
@@ -113,13 +115,13 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Michael Anticoli is a creative technologist and interdisciplinary strategist working at the
-        intersection of music, astrology, and intelligent systems design. He builds innovative
-        frameworks that merge sound, symbolism, and computational logic—most notably the
-        Quantumelodic MetaSystem—to translate complex metaphysical structures into practical tools
-        and immersive digital experiences. His work blends creative direction, technical
-        architecture, and conceptual storytelling to help brands and individuals communicate with
-        clarity, resonance, and emotional precision.
+        Michael Anticoli is a sonic innovator, brand strategist, storyteller, and systems thinker 
+        who transforms complex data into resonant narratives. He creates transformative frameworks 
+        that merge sound design, strategic thinking, and technology—most notably MoonTuner and the 
+        Quantumelodic MetaSystem—to translate temporal patterns and data into immersive sonic 
+        experiences. His work as a systems thinker bridges analytical precision with emotional 
+        storytelling, helping brands and individuals communicate with clarity, resonance, and impact 
+        through the power of sound and strategy.
       </>
     ),
   },
@@ -130,21 +132,22 @@ const about: About = {
       {
         company: "Independent Practice",
         timeframe: "2020 - Present",
-        role: "Creative Technologist & AI Content Strategist",
+        role: "Sonic Innovator & Brand Strategist",
         achievements: [
           <>
-            Developed the Quantumelodic MetaSystem, a comprehensive framework merging music theory,
-            astrological symbolism, and AI-driven content generation to create personalized sonic
-            and narrative experiences.
+            Pioneered MoonTuner, a cyclical trend analysis platform that bridges temporal pattern 
+            recognition with immersive audio technology, achieving 4x higher user engagement through 
+            multi-sensory data storytelling.
           </>,
           <>
-            Architected AI-assisted workflows for brands and creators, integrating generative AI
-            tools (OpenAI, Claude, Suno, Runway) to accelerate creative production and strategic
-            messaging.
+            Engineered Quantumelodics, a data-to-audio system that translates complex patterns into 
+            evolving soundscapes, increasing consumer engagement by 30% through innovative sonic 
+            branding methodologies.
           </>,
           <>
-            Designed and deployed web-based applications using Flask, Node.js, and Supabase for
-            interactive experiences and data-driven content platforms.
+            Developed comprehensive brand strategies and narrative frameworks as a systems thinker, 
+            integrating AI-assisted workflows and sonic architecture to create transformative 
+            experiences for brands and audiences.
           </>,
         ],
         images: [
@@ -336,4 +339,11 @@ const gallery: Gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+const songOfTheMoon = {
+  path: "/song-of-the-moon",
+  label: "Song of the Moon",
+  title: `Song of the Moon – ${person.name}`,
+  description: `An immersive sonic journey through lunar frequencies. Experience the Moon's resonance through interactive audio visualization.`,
+};
+
+export { person, social, newsletter, home, about, blog, work, gallery, songOfTheMoon };

@@ -12,6 +12,9 @@ import {
   HiOutlineDocument,
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
+  HiMusicalNote,
+  HiPlay,
+  HiPause,
 } from "react-icons/hi2";
 
 import {
@@ -51,6 +54,9 @@ export const iconLibrary: Record<string, IconType> = {
   calendar: HiCalendarDays,
   home: PiHouseDuotone,
   gallery: PiImageDuotone,
+  music: HiMusicalNote,
+  play: HiPlay,
+  pause: HiPause,
   discord: FaDiscord,
   eye: HiOutlineEye,
   eyeOff: HiOutlineEyeSlash,
