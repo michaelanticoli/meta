@@ -1,7 +1,6 @@
 import { ProjectCard } from "@/components";
 import { getPosts } from "@/utils/utils";
 import { Grid } from "@once-ui-system/core";
-import styles from "./Projects.module.scss";
 
 interface ProjectsProps {
   range?: [number, number?];
@@ -30,7 +29,7 @@ export function Projects({ range, exclude }: ProjectsProps) {
       columns="3"
       m={{ columns: "2" }}
       s={{ columns: "1" }}
-      className={styles.projectsGrid}
+      gap="24"
       marginBottom="40"
       paddingX="l"
     >
