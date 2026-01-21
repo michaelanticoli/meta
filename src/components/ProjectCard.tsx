@@ -95,7 +95,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           gap="12"
         >
           {title && (
-            <Heading as="h3" wrap="balance" variant="heading-strong-m">
+            <Heading as="h2" wrap="balance" variant="heading-strong-m">
               {title}
             </Heading>
           )}
