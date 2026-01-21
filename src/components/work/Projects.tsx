@@ -1,6 +1,7 @@
-import { getPosts } from "@/utils/utils";
-import { Column } from "@once-ui-system/core";
 import { ProjectCard } from "@/components";
+import { getPosts } from "@/utils/utils";
+import { Grid } from "@once-ui-system/core";
+import styles from "./Projects.module.scss";
 
 interface ProjectsProps {
   range?: [number, number?];
@@ -24,10 +25,18 @@ export function Projects({ range, exclude }: ProjectsProps) {
     : sortedProjects;
 
   return (
-    <Column fillWidth gap="xl" marginBottom="40" paddingX="l">
+    <Grid
+      fillWidth
+      columns="3"
+      m={{ columns: "2" }}
+      s={{ columns: "1" }}
+      className={styles.projectsGrid}
+      marginBottom="40"
+      paddingX="l"
+    >
       {displayedProjects.map((post, index) => (
         <ProjectCard
-          priority={index < 2}
+          priority={index < 3}
           key={post.slug}
           href={`/work/${post.slug}`}
           images={post.metadata.images}
@@ -38,6 +47,6 @@ export function Projects({ range, exclude }: ProjectsProps) {
           link={post.metadata.link || ""}
         />
       ))}
-    </Column>
+    </Grid>
   );
 }
