@@ -16,9 +16,7 @@ interface ProjectCardProps {
   priority?: boolean;
   images: string[];
   title: string;
-  content: string;
   description: string;
-  avatars: { src: string }[];
   link: string;
 }
 
@@ -27,7 +25,6 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   priority = false,
   images = [],
   title,
-  content,
   description,
   link,
 }) => {
