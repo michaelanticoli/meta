@@ -1,14 +1,15 @@
 "use client";
 
 import {
-  AvatarGroup,
-  Carousel,
   Column,
   Flex,
   Heading,
   SmartLink,
   Text,
 } from "@once-ui-system/core";
+import Link from "next/link";
+import Image from "next/image";
+import styles from "./ProjectCard.module.scss";
 
 interface ProjectCardProps {
   href: string;
@@ -23,68 +24,67 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   href,
+  priority = false,
   images = [],
   title,
   content,
   description,
-  avatars,
   link,
 }) => {
+  // Use only the first image as thumbnail
+  const thumbnailImage = images[0] || "/images/placeholder.png";
+
   return (
-    <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        items={images.map((image) => ({
-          slide: image,
-          alt: title,
-        }))}
-      />
-      <Flex
-        s={{ direction: "column" }}
-        fillWidth
-        paddingX="s"
-        paddingTop="12"
-        paddingBottom="24"
-        gap="l"
-      >
-        {title && (
-          <Flex flex={5}>
-            <Heading as="h2" wrap="balance" variant="heading-strong-xl">
+    <Link href={href} className={styles.projectCard}>
+      <Column fillWidth gap="m" className={styles.cardContent}>
+        {/* Square Image Container */}
+        <div className={styles.imageContainer}>
+          <Image
+            src={thumbnailImage}
+            alt={title}
+            fill
+            className={styles.image}
+            priority={priority}
+            sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+          />
+        </div>
+
+        {/* Card Text Content */}
+        <Flex
+          direction="column"
+          fillWidth
+          paddingTop="m"
+          gap="s"
+        >
+          {title && (
+            <Heading as="h3" wrap="balance" variant="heading-strong-l">
               {title}
             </Heading>
-          </Flex>
-        )}
-        {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
-          <Column flex={7} gap="16">
-            {avatars?.length > 0 && <AvatarGroup avatars={avatars} size="m" reverse />}
-            {description?.trim() && (
-              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
-                {description}
-              </Text>
-            )}
-            <Flex gap="24" wrap>
-              {content?.trim() && (
-                <SmartLink
-                  suffixIcon="arrowRight"
-                  style={{ margin: "0", width: "fit-content" }}
-                  href={href}
-                >
-                  <Text variant="body-default-s">Read case study</Text>
-                </SmartLink>
-              )}
-              {link && (
-                <SmartLink
-                  suffixIcon="arrowUpRightFromSquare"
-                  style={{ margin: "0", width: "fit-content" }}
-                  href={link}
-                >
-                  <Text variant="body-default-s">View project</Text>
-                </SmartLink>
-              )}
+          )}
+          {description?.trim() && (
+            <Text
+              wrap="balance"
+              variant="body-default-s"
+              onBackground="neutral-weak"
+              className={styles.description}
+            >
+              {description}
+            </Text>
+          )}
+          {link && (
+            <Flex gap="s" align="center" className={styles.externalLink}>
+              <SmartLink
+                suffixIcon="arrowUpRightFromSquare"
+                style={{ margin: "0", width: "fit-content" }}
+                href={link}
+                onClick={(e: React.MouseEvent) => e.stopPropagation()}
+              >
+                <Text variant="body-default-xs">View live</Text>
+              </SmartLink>
             </Flex>
-          </Column>
-        )}
-      </Flex>
-    </Column>
+          )}
+        </Flex>
+      </Column>
+    </Link>
   );
 };
