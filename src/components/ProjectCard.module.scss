@@ -1,11 +1,9 @@
 .projectCard {
-  display: block;
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 300ms ease, box-shadow 300ms ease;
+  display: flex;
+  flex-direction: column;
   border-radius: 12px;
   overflow: hidden;
+  transition: transform 300ms ease, box-shadow 300ms ease;
   
   &:hover {
     transform: translateY(-4px);
@@ -16,6 +14,13 @@
       transform: scale(1.05);
     }
   }
+}
+
+.cardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
 }
 
 .cardContent {
@@ -50,7 +55,7 @@
   text-overflow: ellipsis;
 }
 
-.externalLink {
-  margin-top: auto;
-  padding-top: 0.5rem;
+.externalLinkContainer {
+  margin-top: 0.5rem;
+  padding: 0 0.5rem;
 }
