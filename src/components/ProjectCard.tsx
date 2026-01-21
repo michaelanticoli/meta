@@ -35,16 +35,24 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   const thumbnailImage = images[0] || "";
 
+  const handleCardClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    // Only navigate if clicking on the card itself, not on a link
+    const target = e.target as HTMLElement;
+    if (!target.closest("a")) {
+      window.location.href = href;
+    }
+  };
+
   return (
     <Card
       fillWidth
       className={styles.projectCard}
-      href={href}
       transition="micro-medium"
       border="neutral-alpha-weak"
       background="surface"
       padding="0"
       radius="l"
+      onClick={handleCardClick}
     >
       <Column fillWidth gap="0">
         {thumbnailImage && (
@@ -65,6 +73,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     suffixIcon="arrowRight"
                     style={{ margin: "0", width: "fit-content" }}
                     href={href}
+                    onClick={(e: React.MouseEvent) => e.stopPropagation()}
                   >
                     <Text variant="body-default-s" onBackground="neutral-strong">
                       Read case study
@@ -76,6 +85,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                     suffixIcon="arrowUpRightFromSquare"
                     style={{ margin: "0", width: "fit-content" }}
                     href={link}
+                    onClick={(e: React.MouseEvent) => e.stopPropagation()}
                   >
                     <Text variant="body-default-s" onBackground="neutral-strong">
                       View project
