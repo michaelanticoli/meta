@@ -13,6 +13,12 @@ This repository is a portfolio website built with Next.js, TypeScript, and the O
 
 ## Development Workflow
 
+### Setup
+
+1. **Install dependencies**: `npm install`
+2. **Environment variables** (optional): Copy `.env.example` to `.env.local` if password protection is needed
+   - `PAGE_ACCESS_PASSWORD`: Password for protected routes
+
 ### Available Scripts
 
 ```bash
