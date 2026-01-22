@@ -27,7 +27,7 @@ export function Projects({ range, exclude }: ProjectsProps) {
     <div className={styles.projectsGrid}>
       {displayedProjects.map((post, index) => (
         <ProjectCard
-          priority={index < 2}
+          priority={index < 3}
           key={post.slug}
           href={`/work/${post.slug}`}
           images={post.metadata.images}

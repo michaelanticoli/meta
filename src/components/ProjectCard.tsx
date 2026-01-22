@@ -1,9 +1,12 @@
 "use client";
 
 import {
+  AvatarGroup,
+  Card,
   Column,
   Flex,
   Heading,
+  Media,
   SmartLink,
   Text,
 } from "@once-ui-system/core";
