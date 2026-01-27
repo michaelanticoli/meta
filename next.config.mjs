@@ -9,6 +9,8 @@ const withMDX = mdx({
 const nextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
   transpilePackages: ["next-mdx-remote"],
+  // Enable standalone output for Docker deployment
+  output: process.env.BUILD_STANDALONE === "true" ? "standalone" : undefined,
   images: {
     remotePatterns: [
       {

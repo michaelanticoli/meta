@@ -1,0 +1,53 @@
+# Render.com Blueprint Specification
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: magic-portfolio
+    runtime: node
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: PAGE_ACCESS_PASSWORD
+        sync: false
+    buildFilter:
+      paths:
+        - src/**/*
+        - public/**/*
+        - package.json
+        - next.config.mjs
+        - tsconfig.json
+    autoDeploy: true
+    scaling:
+      minInstances: 1
+      maxInstances: 3
+      targetMemoryPercent: 80
+      targetCPUPercent: 80
+
+# Static site alternative (if you want to export as static)
+# Uncomment below and comment out the web service above
+# staticSites:
+#   - name: magic-portfolio-static
+#     buildCommand: npm install && npm run build && npm run export
+#     staticPublishPath: out
+#     pullRequestPreviewsEnabled: true
+#     branch: main
+#     headers:
+#       - path: /*
+#         name: X-Content-Type-Options
+#         value: nosniff
+#       - path: /*
+#         name: X-Frame-Options
+#         value: DENY
+#     routes:
+#       - type: rewrite
+#         source: /rss
+#         destination: /api/rss
