@@ -1,0 +1,29 @@
+# Quantumelodic Backend Dependencies
+
+# Web Framework
+flask==3.0.0
+flask-cors==4.0.0
+gunicorn==21.2.0
+
+# Environment
+python-dotenv==1.0.0
+
+# Astronomy/Ephemeris
+pyswisseph==2.10.3.2
+
+# Data Processing
+pandas==2.1.0
+numpy==1.24.0
+
+# MIDI Generation
+midiutil==1.2.1
+
+# Database (Supabase)
+supabase==2.0.0
+
+# Testing
+pytest==7.4.0
+pytest-cov==4.1.0
+
+# Type Checking
+mypy==1.5.0
