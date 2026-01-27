@@ -1,0 +1,13 @@
+mode_id,mode_name,zodiac_sign,semitone_pattern,archetype,emotional_color,sonic_role,waveform,timbre,element
+P1_ARIES,Aries Pentatonic,Aries,0-2-4-7-9,The Pioneer,"Bold, Initiating, Courageous",Rhythmic Driver,sawtooth,brass,Fire
+P2_TAURUS,Taurus Pentatonic,Taurus,0-2-5-7-9,The Builder,"Grounded, Sensual, Steady",Harmonic Foundation,triangle,strings,Earth
+P3_GEMINI,Gemini Pentatonic,Gemini,0-2-4-7-11,The Messenger,"Curious, Adaptive, Communicative",Melodic Weaver,square,wind,Air
+P4_CANCER,Cancer Pentatonic,Cancer,0-3-5-7-10,The Nurturer,"Protective, Intuitive, Emotional",Emotional Core,sine,piano,Water
+P5_LEO,Leo Pentatonic,Leo,0-2-4-7-9,The Sovereign,"Creative, Expressive, Regal",Melodic Leader,sawtooth,brass,Fire
+P6_VIRGO,Virgo Pentatonic,Virgo,0-2-5-7-10,The Analyst,"Precise, Practical, Healing",Harmonic Precision,triangle,harp,Earth
+P7_LIBRA,Libra Pentatonic,Libra,0-2-4-7-9,The Harmonizer,"Balanced, Diplomatic, Aesthetic",Harmonic Balance,sine,strings,Air
+P8_SCORPIO,Scorpio Pentatonic,Scorpio,0-1-5-7-8,The Transformer,"Intense, Transformative, Deep",Tension Builder,sawtooth,synth,Water
+P9_SAGITTARIUS,Sagittarius Pentatonic,Sagittarius,0-2-4-7-11,The Explorer,"Expansive, Optimistic, Philosophical",Melodic Expansor,triangle,brass,Fire
+P10_CAPRICORN,Capricorn Pentatonic,Capricorn,0-2-5-7-9,The Architect,"Disciplined, Ambitious, Structured",Structural Foundation,square,organ,Earth
+P11_AQUARIUS,Aquarius Pentatonic,Aquarius,0-2-4-8-10,The Visionary,"Innovative, Humanitarian, Eccentric",Harmonic Innovator,square,synth,Air
+P12_PISCES,Pisces Pentatonic,Pisces,0-3-5-8-10,The Dreamer,"Mystical, Compassionate, Transcendent",Ethereal Ambiance,sine,pad,Water

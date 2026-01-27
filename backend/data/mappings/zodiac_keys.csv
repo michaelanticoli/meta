@@ -1,0 +1,13 @@
+zodiac_sign,element,modality,primary_key,alternate_keys,tempo_range_low,tempo_range_high
+Aries,Fire,Cardinal,C major,"G major,D major",120,140
+Taurus,Earth,Fixed,F major,"Bb major,Eb major",80,100
+Gemini,Air,Mutable,A major,"E major,B major",100,130
+Cancer,Water,Cardinal,A minor,"D minor,E minor",90,110
+Leo,Fire,Fixed,C major,"G major,D major",80,100
+Virgo,Earth,Mutable,F major,"Bb major,Eb major",100,130
+Libra,Air,Cardinal,A major,"E major,B major",120,140
+Scorpio,Water,Fixed,A minor,"D minor,E minor",80,100
+Sagittarius,Fire,Mutable,C major,"G major,D major",100,130
+Capricorn,Earth,Cardinal,F major,"Bb major,Eb major",120,140
+Aquarius,Air,Fixed,A major,"E major,B major",80,100
+Pisces,Water,Mutable,A minor,"D minor,E minor",100,130
