@@ -1,0 +1,38 @@
+# Quantumelodic API Dependencies
+# Python 3.10+ required
+
+# Web Framework
+flask==3.0.0
+flask-cors==4.0.0
+gunicorn==21.2.0
+
+# Environment & Configuration
+python-dotenv==1.0.0
+
+# Ephemeris & Astronomical Calculations
+pyswisseph==2.10.3.2
+
+# Data Processing
+pandas==2.1.0
+numpy==1.24.0
+
+# MIDI Generation
+midiutil==1.2.1
+
+# Database (Supabase)
+supabase==2.0.0
+
+# Date/Time Handling
+python-dateutil==2.8.2
+pytz==2024.1
+
+# HTTP Requests (for geocoding)
+requests==2.31.0
+
+# Testing
+pytest==7.4.0
+pytest-cov==4.1.0
+
+# Development
+black==23.9.0
+flake8==6.1.0

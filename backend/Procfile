@@ -1,0 +1,2 @@
+# Heroku/Render Procfile
+web: cd backend && gunicorn api.main:app --bind 0.0.0.0:$PORT --workers 2

@@ -1,0 +1,13 @@
+mode_id,mode_name,modality,element,semitone_pattern,archetype,rhythmic_emphasis,dynamic_character
+Q1_CARDINAL_FIRE,Cardinal Fire,Cardinal,Fire,0-4-7-11,The Initiator,downbeat,explosive
+Q2_CARDINAL_EARTH,Cardinal Earth,Cardinal,Earth,0-3-7-10,The Achiever,steady,determined
+Q3_CARDINAL_AIR,Cardinal Air,Cardinal,Air,0-4-7-9,The Negotiator,syncopated,balanced
+Q4_CARDINAL_WATER,Cardinal Water,Cardinal,Water,0-3-5-10,The Protector,flowing,nurturing
+Q5_FIXED_FIRE,Fixed Fire,Fixed,Fire,0-4-7-11,The Performer,strong,dramatic
+Q6_FIXED_EARTH,Fixed Earth,Fixed,Earth,0-3-7-9,The Sustainer,grounded,persistent
+Q7_FIXED_AIR,Fixed Air,Fixed,Air,0-4-8-10,The Rebel,irregular,electric
+Q8_FIXED_WATER,Fixed Water,Fixed,Water,0-1-5-8,The Alchemist,intense,transformative
+Q9_MUTABLE_FIRE,Mutable Fire,Mutable,Fire,0-4-7-11,The Adventurer,free,expansive
+Q10_MUTABLE_EARTH,Mutable Earth,Mutable,Earth,0-2-5-10,The Healer,precise,analytical
+Q11_MUTABLE_AIR,Mutable Air,Mutable,Air,0-2-4-11,The Communicator,quick,mercurial
+Q12_MUTABLE_WATER,Mutable Water,Mutable,Water,0-3-5-10,The Mystic,fluid,dreamy

@@ -1,0 +1,5 @@
+element,primary_waveform,primary_instruments,secondary_instruments,sonic_character,dynamic_range,reverb_character
+Fire,sawtooth,"brass,electric guitar,synth lead","drums,percussion","bright, aggressive, cutting","wide, dynamic","short, bright"
+Earth,triangle,"acoustic guitar,piano,strings","cello,bass,marimba","warm, rich, grounded","moderate, consistent","medium, natural"
+Air,square,"flute,wind instruments,chimes","harp,vibraphone,bells","light, airy, crystalline","soft to moderate","long, spacious"
+Water,sine,"pads,cello,ambient synths","ocean sounds,glass,voice","deep, flowing, ethereal","soft, evolving","long, dreamy"

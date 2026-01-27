@@ -1,0 +1,44 @@
+# Render.com Deployment Configuration
+# This file configures the deployment of the Quantumelodic backend API
+
+services:
+  # Backend API Service
+  - type: web
+    name: quantumelodic-api
+    env: python
+    region: oregon
+    plan: free  # Change to 'starter' or higher for production
+
+    # Build configuration
+    buildCommand: |
+      pip install -r backend/requirements.txt
+
+    # Start command
+    startCommand: |
+      cd backend && gunicorn api.main:app --bind 0.0.0.0:$PORT --workers 2
+
+    # Health check
+    healthCheckPath: /api/health
+
+    # Environment variables
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PYTHON_VERSION
+        value: "3.11"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: SUPABASE_URL
+        sync: false  # Set manually in Render dashboard
+      - key: SUPABASE_KEY
+        sync: false  # Set manually in Render dashboard
+      - key: ALLOWED_ORIGINS
+        value: https://quantumelodics.com,https://www.quantumelodics.com
+
+    # Auto-deploy from main branch
+    autoDeploy: true
+
+# Notes:
+# 1. After deploying, set SUPABASE_URL and SUPABASE_KEY in the Render dashboard
+# 2. Update ALLOWED_ORIGINS with your actual frontend domain
+# 3. For production, upgrade to a paid plan for better performance
